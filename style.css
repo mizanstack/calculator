@@ -118,3 +118,94 @@ button:active {
 button[value="0"] {
   grid-column: span 2;
 }
+
+/* Navigation */
+.navbar {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Feedback Form */
+.feedback-container {
+  border-radius: 20px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff9f0a;
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, #ff9f0a, #ff453a);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 69, 58, 0.3);
+}
